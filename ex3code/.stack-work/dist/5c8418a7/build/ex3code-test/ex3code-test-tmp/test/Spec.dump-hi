@@ -1,0 +1,567 @@
+
+==================== FINAL INTERFACE ====================
+2018-09-11 15:10:11.5837588 UTC
+
+interface main:Main 8022
+  interface hash: f26e04a4f58adbf05d5a3025b8b2604c
+  ABI hash: 7c0ad9b52fbecf2a0a8a8b2845660da1
+  export-list hash: df2d0845d4c976d5ff8a09d3f22571f2
+  orphan hash: c2faf504643e452938088594c8eabd1a
+  flag hash: 0af46c1cbbfb895e3c70ff87fe97e451
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: HUnit-1.6.0.0 QuickCheck-2.11.3 Win32-2.5.4.1
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 base-4.10.1.0
+                      bytestring-0.10.8.2 call-stack-0.1.0 clock-0.7.2 colour-2.3.4
+                      containers-0.5.10.2 deepseq-1.4.3.0 directory-1.3.0.2
+                      ex3code-0.1.0.0 filepath-1.4.1.2 ghc-boot-th-8.2.2 ghc-prim-0.5.1.1
+                      hspec-2.5.4 hspec-core-2.5.4 hspec-expectations-0.8.2
+                      integer-gmp-1.0.1.0 mintty-0.1.2 pretty-1.1.3.3 primitive-0.6.4.0
+                      quickcheck-io-0.2.0 random-1.1 setenv-0.1.1.3 stm-2.4.5.0
+                      template-haskell-2.12.0.0 tf-random-0.5 time-1.8.0.2
+                      transformers-0.5.2.0
+orphans: colour-2.3.4:Data.Colour
+         quickcheck-io-0.2.0:Test.QuickCheck.IO
+         stm-2.4.5.0:Control.Monad.STM
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats clock-0.7.2:System.Clock
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         hspec-core-2.5.4:Test.Hspec.Core.Example
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.11.3:Test.QuickCheck 0949716f49ee45ba7110e0ee3499bec5
+import  -/  QuickCheck-2.11.3:Test.QuickCheck.Gen 50a35913dec5dcb46d15914b34e350b6
+import  -/  QuickCheck-2.11.3:Test.QuickCheck.Property 1d7ff1310793db75411aea7177ce3209
+import  -/  base-4.10.1.0:Data.Foldable 4349255461f1285ad885cd2301205c36
+import  -/  base-4.10.1.0:GHC.Base 8f949d675e49677c272f02ab7a85fe18
+import  -/  base-4.10.1.0:GHC.Num bee60808f8127e4cda82dd422aa1c6c0
+import  -/  base-4.10.1.0:GHC.Show 927ef590f679632bf94869e8018e5b48
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  ex3code-0.1.0.0:Lib ac659607304d454e1c70708f37c82b83
+import  -/  ex3code-0.1.0.0:Tree 4ee1a22ec211d8569f51cecbe2f30d25
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  hspec-2.5.4:Test.Hspec b8987859de3cba4a843c0956673af399
+import  -/  hspec-core-2.5.4:Test.Hspec.Core.Runner df2edea9d56bd676933cf6d216ca179b
+import  -/  hspec-core-2.5.4:Test.Hspec.Core.Spec 610194a2a57c1505b2fa8c578e19d162
+import  -/  hspec-expectations-0.8.2:Test.Hspec.Expectations 4cffe7aa28261a6521a5f11df8940eca
+import  -/  integer-gmp-1.0.1.0:GHC.Integer.Type b5281b57ea091e60b176ffa6bef118fd
+6dc8aa4fd56e5b498f85394966d99104
+  $fEqColor :: GHC.Classes.Eq Main.Color
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Color Main.$fEqColor_$c== Main.$fEqColor_$c/= -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fEqColor_$c/= :: Main.Color -> Main.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Main.Color) (b :: Main.Color) ->
+                 case a of wild {
+                   Main.Red
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Red -> GHC.Types.False }
+                   Main.Green
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Green -> GHC.Types.False }
+                   Main.Blue
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Blue -> GHC.Types.False }
+                   Main.Yellow
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Yellow -> GHC.Types.False } }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fEqColor_$c== :: Main.Color -> Main.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Main.Color) (ds1 :: Main.Color) ->
+                 case ds of wild {
+                   Main.Red
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Red -> GHC.Types.True }
+                   Main.Green
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Green -> GHC.Types.True }
+                   Main.Blue
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Blue -> GHC.Types.True }
+                   Main.Yellow
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Yellow -> GHC.Types.True } }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fOrdColor :: GHC.Classes.Ord Main.Color
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Color
+                  Main.$fEqColor
+                  Main.$fOrdColor_$ccompare
+                  Main.$fOrdColor_$c<
+                  Main.$fOrdColor_$c<=
+                  Main.$fOrdColor_$c>
+                  Main.$fOrdColor_$c>=
+                  Main.$fOrdColor_$cmax
+                  Main.$fOrdColor_$cmin -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fOrdColor_$c< :: Main.Color -> Main.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Main.Color) (b :: Main.Color) ->
+                 case a of wild {
+                   Main.Red
+                   -> case b of wild1 {
+                        Main.Red -> GHC.Types.False
+                        Main.Green -> GHC.Types.True
+                        Main.Blue -> GHC.Types.True
+                        Main.Yellow -> GHC.Types.True }
+                   Main.Green
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Main.Blue -> GHC.Types.True
+                        Main.Yellow -> GHC.Types.True }
+                   Main.Blue
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False Main.Yellow -> GHC.Types.True }
+                   Main.Yellow -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fOrdColor_$c<= :: Main.Color -> Main.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Main.Color) (b :: Main.Color) ->
+                 case b of wild {
+                   Main.Red
+                   -> case a of wild1 {
+                        Main.Red -> GHC.Types.True
+                        Main.Green -> GHC.Types.False
+                        Main.Blue -> GHC.Types.False
+                        Main.Yellow -> GHC.Types.False }
+                   Main.Green
+                   -> case a of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Main.Blue -> GHC.Types.False
+                        Main.Yellow -> GHC.Types.False }
+                   Main.Blue
+                   -> case a of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Yellow -> GHC.Types.False }
+                   Main.Yellow -> case a of wild1 { DEFAULT -> GHC.Types.True } }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fOrdColor_$c> :: Main.Color -> Main.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Main.Color) (b :: Main.Color) ->
+                 Main.$fOrdColor_$c< b a) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fOrdColor_$c>= :: Main.Color -> Main.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Main.Color) (b :: Main.Color) ->
+                 case a of wild {
+                   Main.Red
+                   -> case b of wild1 {
+                        Main.Red -> GHC.Types.True
+                        Main.Green -> GHC.Types.False
+                        Main.Blue -> GHC.Types.False
+                        Main.Yellow -> GHC.Types.False }
+                   Main.Green
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Main.Blue -> GHC.Types.False
+                        Main.Yellow -> GHC.Types.False }
+                   Main.Blue
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Main.Yellow -> GHC.Types.False }
+                   Main.Yellow -> case b of wild1 { DEFAULT -> GHC.Types.True } }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fOrdColor_$ccompare ::
+    Main.Color -> Main.Color -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Main.Color) (b :: Main.Color) ->
+                 case a of wild {
+                   Main.Red
+                   -> case b of wild1 {
+                        Main.Red -> GHC.Types.EQ
+                        Main.Green -> GHC.Types.LT
+                        Main.Blue -> GHC.Types.LT
+                        Main.Yellow -> GHC.Types.LT }
+                   Main.Green
+                   -> case b of wild1 {
+                        Main.Red -> GHC.Types.GT
+                        Main.Green -> GHC.Types.EQ
+                        Main.Blue -> GHC.Types.LT
+                        Main.Yellow -> GHC.Types.LT }
+                   Main.Blue
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Main.Blue -> GHC.Types.EQ
+                        Main.Yellow -> GHC.Types.LT }
+                   Main.Yellow
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT Main.Yellow -> GHC.Types.EQ } }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fOrdColor_$cmax :: Main.Color -> Main.Color -> Main.Color
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Main.Color) (y :: Main.Color) ->
+                 case y of wild {
+                   Main.Red -> x
+                   Main.Green
+                   -> case x of wild1 {
+                        DEFAULT -> Main.Green
+                        Main.Blue -> Main.Blue
+                        Main.Yellow -> Main.Yellow }
+                   Main.Blue
+                   -> case x of wild1 {
+                        DEFAULT -> Main.Blue Main.Yellow -> Main.Yellow }
+                   Main.Yellow -> case x of wild1 { DEFAULT -> Main.Yellow } }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fOrdColor_$cmin :: Main.Color -> Main.Color -> Main.Color
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Main.Color) (y :: Main.Color) ->
+                 case y of wild {
+                   Main.Red -> case x of wild1 { DEFAULT -> Main.Red }
+                   Main.Green
+                   -> case x of wild1 {
+                        DEFAULT -> wild1
+                        Main.Blue -> Main.Green
+                        Main.Yellow -> Main.Green }
+                   Main.Blue
+                   -> case x of wild1 { DEFAULT -> wild1 Main.Yellow -> Main.Blue }
+                   Main.Yellow -> x }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fShowColor :: GHC.Show.Show Main.Color
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Color
+                  Main.$fShowColor_$cshowsPrec
+                  Main.$fShowColor_$cshow
+                  Main.$fShowColor_$cshowList -}
+448030a0aecaff6d1a9d0cab9eb18b0c
+  $fShowColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowColor2) -}
+17d81e683babcefae59e9ad614715525
+  $fShowColor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Yellow"#) -}
+ca89f1fd6ee375def610c2e1c600acdd
+  $fShowColor3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowColor4) -}
+d3676dde98c0e8be3d641b069fff559f
+  $fShowColor4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Blue"#) -}
+5b5a31ffd528829572b1c7189e5b6f10
+  $fShowColor5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowColor6) -}
+e0964a6149601e989f19e7b6ac41ba2f
+  $fShowColor6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Green"#) -}
+fbd0010f9ff3c38a47d1f4f43ea2efce
+  $fShowColor7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$fShowColor8) -}
+678cfbfd5c7cd126f43f51eac17c544b
+  $fShowColor8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Red"#) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fShowColor_$cshow :: Main.Color -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.Color) ->
+                 case x of wild {
+                   Main.Red -> Main.$fShowColor7
+                   Main.Green -> Main.$fShowColor5
+                   Main.Blue -> Main.$fShowColor3
+                   Main.Yellow -> Main.$fShowColor1 }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fShowColor_$cshowList :: [Main.Color] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Main.Color Main.$w$cshowsPrec) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $fShowColor_$cshowsPrec ::
+    GHC.Types.Int -> Main.Color -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Main.Color)
+                   (w2 :: GHC.Base.String) ->
+                 Main.$w$cshowsPrec w1 w2) -}
+ac949b46379410a0d9b8e9a692d36a55
+  $s$fEqMaybe :: GHC.Classes.Eq (GHC.Base.Maybe GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe GHC.Types.Int)
+                  (\ (ds :: GHC.Base.Maybe GHC.Types.Int)
+                     (ds1 :: GHC.Base.Maybe GHC.Types.Int) ->
+                   case ds of wild {
+                     GHC.Base.Nothing
+                     -> case ds1 of wild1 {
+                          GHC.Base.Nothing -> GHC.Types.True
+                          GHC.Base.Just ipv -> GHC.Types.False }
+                     GHC.Base.Just a1
+                     -> case ds1 of wild1 {
+                          GHC.Base.Nothing -> GHC.Types.False
+                          GHC.Base.Just b1 -> GHC.Classes.eqInt a1 b1 } })
+                  (\ (a1 :: GHC.Base.Maybe GHC.Types.Int)
+                     (b :: GHC.Base.Maybe GHC.Types.Int) ->
+                   case a1 of wild {
+                     GHC.Base.Nothing
+                     -> case b of wild1 {
+                          GHC.Base.Nothing -> GHC.Types.False
+                          GHC.Base.Just ipv -> GHC.Types.True }
+                     GHC.Base.Just a2
+                     -> case b of wild1 {
+                          GHC.Base.Nothing -> GHC.Types.True
+                          GHC.Base.Just b1
+                          -> case GHC.Classes.eqInt a2 b1 of wild2 {
+                               GHC.Types.False -> GHC.Types.True
+                               GHC.Types.True -> GHC.Types.False } } }) -}
+91a4aa9914e7c2850f23039249c2e5ef
+  $s$fShowMaybe :: GHC.Show.Show (GHC.Base.Maybe GHC.Types.Int)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe GHC.Types.Int)
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ GHC.Types.Int
+                     GHC.Show.$fShowInt)
+                  (\ (x :: GHC.Base.Maybe GHC.Types.Int) ->
+                   case x of wild {
+                     GHC.Base.Nothing -> GHC.Show.$fShowMaybe4
+                     GHC.Base.Just b1
+                     -> GHC.Base.augment
+                          @ GHC.Types.Char
+                          (\ @ b
+                             (c :: GHC.Types.Char -> b -> b)[OneShot]
+                             (n3 :: b)[OneShot] ->
+                           GHC.Base.foldr @ GHC.Types.Char @ b c n3 GHC.Show.$fShowMaybe1)
+                          (GHC.Show.showSignedInt
+                             GHC.Show.appPrec1
+                             b1
+                             (GHC.Types.[] @ GHC.Types.Char)) })
+                  (\ (eta :: [GHC.Base.Maybe GHC.Types.Int])
+                     (eta13 :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ (GHC.Base.Maybe GHC.Types.Int)
+                     (GHC.Show.$fShowMaybe_$cshowsPrec
+                        @ GHC.Types.Int
+                        GHC.Show.$fShowInt
+                        GHC.Show.$fShow(,)1)
+                     eta
+                     eta13) -}
+68fa7aa7a464d334641f43127dc17c66
+  $s$fShow[] :: GHC.Show.Show [GHC.Integer.Type.Integer]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  (\ (ds :: GHC.Types.Int) -> GHC.Show.$fShowInteger_$cshowList)
+                  (\ (x :: [GHC.Integer.Type.Integer]) ->
+                   GHC.Show.$fShowInteger_$cshowList
+                     x
+                     (GHC.Types.[] @ GHC.Types.Char))
+                  (\ (ls :: [[GHC.Integer.Type.Integer]]) (s :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ [GHC.Integer.Type.Integer]
+                     GHC.Show.$fShowInteger_$cshowList
+                     ls
+                     s) -}
+039c7a3e9a285e5fc2f728545a99aebb
+  $tc'Blue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9943279084526582132##
+                   6790008591247440631##
+                   Main.$trModule
+                   Main.$tc'Blue2
+                   0#
+                   Main.$tc'Blue1) -}
+a1bbcddc0f0b631393827659255f4220
+  $tc'Blue1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+0493f8daaecd0f88b628ddca91fd6ce2
+  $tc'Blue2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Blue3) -}
+289ab762f10ab4d0ef31beaedbcd91a7
+  $tc'Blue3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Blue"#) -}
+effe9df323ed4c0be0ac1b9102bd3428
+  $tc'Green :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9914196461078998278##
+                   5481564151281004408##
+                   Main.$trModule
+                   Main.$tc'Green1
+                   0#
+                   Main.$tc'Blue1) -}
+e9338457740176a28a2f46ed3496ab97
+  $tc'Green1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Green2) -}
+c148f0355e1c8ac4b53985d9c5337cdb
+  $tc'Green2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Green"#) -}
+0a910a72734365b926e87f8901d4faa5
+  $tc'Red :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5617426204813736279##
+                   12331342218150123382##
+                   Main.$trModule
+                   Main.$tc'Red1
+                   0#
+                   Main.$tc'Blue1) -}
+3c683ad17d585b68fabb610c8176d59c
+  $tc'Red1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Red2) -}
+0aed0acd95af31238d9c52532d0fbef0
+  $tc'Red2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Red"#) -}
+b4f288c46cd23746c68434db92a717c6
+  $tc'Yellow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7105212286096344478##
+                   9287573668656899957##
+                   Main.$trModule
+                   Main.$tc'Yellow1
+                   0#
+                   Main.$tc'Blue1) -}
+c02d3e39524961caa4ea12acf3b647df
+  $tc'Yellow1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tc'Yellow2) -}
+6a91962d424bf302836e002eb899c626
+  $tc'Yellow2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Yellow"#) -}
+221ab56881dd352af7ffa70d0b6a4fb1
+  $tcColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6996184027453350222##
+                   13104320352684360558##
+                   Main.$trModule
+                   Main.$tcColor1
+                   0#
+                   GHC.Types.krep$*) -}
+3fb6ea002aaf00e2a0922062198cab99
+  $tcColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$tcColor2) -}
+102c397d3dbfd38ec365d35108004744
+  $tcColor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Color"#) -}
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+6dc8aa4fd56e5b498f85394966d99104
+  $w$cshowsPrec :: Main.Color -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Main.Color) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Main.Red -> GHC.Base.++ @ GHC.Types.Char Main.$fShowColor7 w1
+                   Main.Green -> GHC.Base.++ @ GHC.Types.Char Main.$fShowColor5 w1
+                   Main.Blue -> GHC.Base.++ @ GHC.Types.Char Main.$fShowColor3 w1
+                   Main.Yellow
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowColor1 w1 }) -}
+6dc8aa4fd56e5b498f85394966d99104
+  data Color = Red | Green | Blue | Yellow
+02fafd7a3b338c5b9398cbedf724c75d
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+693c3835253a714ac00630db2dd5eedb
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Test.Hspec.Core.Runner.hspec2
+                        Test.Hspec.Core.Config.Options.defaultConfig
+                        Main.main2
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Types.N:IO[0]
+                                       <((), [Test.Hspec.Core.Tree.SpecTree ()])>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                                            <[Test.Hspec.Core.Tree.SpecTree ()]>_N
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Test.Hspec.Core.Runner.Summary ds ds2 ->
+                 case ds2 of wild1 { GHC.Types.I# x ->
+                 case x of wild2 {
+                   DEFAULT -> System.Exit.exitFailure1 @ () ipv
+                   0# -> (# ipv, GHC.Tuple.() #) } } } }) -}
+cbcba579fc21a5a4c9614c2c4cd23fba
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), [Test.Hspec.Core.Tree.SpecTree ()]) #)
+  {- Arity: 1, Strictness: <S,U> -}
+277226d5c1df39b69263cc4f6a3c76fe
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+instance GHC.Classes.Eq [Main.Color] = Main.$fEqColor
+instance GHC.Classes.Ord [Main.Color] = Main.$fOrdColor
+instance GHC.Show.Show [Main.Color] = Main.$fShowColor
+"SPEC/Main $fEqMaybe @ Int" [orphan] forall (v :: GHC.Classes.Eq
+                                                    GHC.Types.Int)
+  GHC.Base.$fEqMaybe @ GHC.Types.Int v = Main.$s$fEqMaybe
+"SPEC/Main $fShowMaybe @ Int" [orphan] forall (v :: GHC.Show.Show
+                                                      GHC.Types.Int)
+  GHC.Show.$fShowMaybe @ GHC.Types.Int v = Main.$s$fShowMaybe
+"SPEC/Main $fShow[] @ Integer" [orphan] forall (v :: GHC.Show.Show
+                                                       GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[] @ GHC.Integer.Type.Integer v = Main.$s$fShow[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

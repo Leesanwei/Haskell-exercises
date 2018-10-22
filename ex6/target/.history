@@ -1,0 +1,15 @@
+run
+sumArray 3
+sumArray Array(1,2,3)
+sumArray :Array(1,2,3)
+sumArray
+sumArray r
+sumArray y
+sumArray var y
+sumArray(y)
+run sumArray
+sumArray(Array(1,2,3))
+sumArray
+sumArray()
+run : sumArray()
+run

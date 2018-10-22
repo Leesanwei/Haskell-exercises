@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\Win8\Desktop\Programming Languages\ex6\Main.scala:98:34: a pure expression does nothing in statement position[0m
+[0m[[0m[33mwarn[0m] [0m[0m            override def run() = body[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were four deprecation warnings (since 2.12.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

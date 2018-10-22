@@ -1,0 +1,206 @@
+
+==================== FINAL INTERFACE ====================
+2018-09-04 16:24:25.8809901 UTC
+
+interface main:Main 8022
+  interface hash: 2b426f12597d4c051a0a71af5d0b7e55
+  ABI hash: 4f4847c886f8d8d8b309f4df788fe047
+  export-list hash: 63863da8b054f903ff7254d828170c03
+  orphan hash: 90dd8522d3c6e50eab073b236a810de5
+  flag hash: d39e5444e3487002b17dfed63b50f692
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: HUnit-1.6.0.0 QuickCheck-2.11.3 Win32-2.5.4.1
+                      ansi-terminal-0.8.0.4 array-0.5.2.0 base-4.10.1.0
+                      bytestring-0.10.8.2 call-stack-0.1.0 clock-0.7.2 colour-2.3.4
+                      containers-0.5.10.2 deepseq-1.4.3.0 directory-1.3.0.2
+                      ex2code-0.1.0.0 filepath-1.4.1.2 ghc-boot-th-8.2.2 ghc-prim-0.5.1.1
+                      hspec-2.5.4 hspec-core-2.5.4 hspec-expectations-0.8.2
+                      integer-gmp-1.0.1.0 mintty-0.1.2 pretty-1.1.3.3 primitive-0.6.4.0
+                      quickcheck-io-0.2.0 random-1.1 setenv-0.1.1.3 stm-2.4.5.0
+                      template-haskell-2.12.0.0 tf-random-0.5 time-1.8.0.2
+                      transformers-0.5.2.0
+orphans: colour-2.3.4:Data.Colour
+         quickcheck-io-0.2.0:Test.QuickCheck.IO
+         stm-2.4.5.0:Control.Monad.STM
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats clock-0.7.2:System.Clock
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         hspec-core-2.5.4:Test.Hspec.Core.Example
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.11.3:Test.QuickCheck 0949716f49ee45ba7110e0ee3499bec5
+import  -/  QuickCheck-2.11.3:Test.QuickCheck.Gen 50a35913dec5dcb46d15914b34e350b6
+import  -/  QuickCheck-2.11.3:Test.QuickCheck.Property 1d7ff1310793db75411aea7177ce3209
+import  -/  base-4.10.1.0:GHC.Base 8f949d675e49677c272f02ab7a85fe18
+import  -/  base-4.10.1.0:GHC.List 1bb0adf79553530dc898796596e53188
+import  -/  base-4.10.1.0:GHC.Num bee60808f8127e4cda82dd422aa1c6c0
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  ex2code-0.1.0.0:Lib b601c217c894d4016935832a45af2137
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  hspec-2.5.4:Test.Hspec b8987859de3cba4a843c0956673af399
+import  -/  hspec-core-2.5.4:Test.Hspec.Core.Runner df2edea9d56bd676933cf6d216ca179b
+import  -/  hspec-core-2.5.4:Test.Hspec.Core.Spec 610194a2a57c1505b2fa8c578e19d162
+import  -/  hspec-expectations-0.8.2:Test.Hspec.Expectations 4cffe7aa28261a6521a5f11df8940eca
+8a8517d7175c25688a60521a6ccd288b
+  $s$fEqMaybe :: GHC.Classes.Eq (Lib.Maybe GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Lib.Maybe GHC.Types.Int)
+                  (\ (ds2 :: Lib.Maybe GHC.Types.Int)
+                     (ds3 :: Lib.Maybe GHC.Types.Int) ->
+                   case ds2 of wild {
+                     Lib.Some a1
+                     -> case ds3 of wild1 {
+                          Lib.Some b1 -> GHC.Classes.eqInt a1 b1
+                          Lib.None -> GHC.Types.False }
+                     Lib.None
+                     -> case ds3 of wild1 {
+                          Lib.Some ipv -> GHC.Types.False Lib.None -> GHC.Types.True } })
+                  (\ (a1 :: Lib.Maybe GHC.Types.Int)
+                     (b :: Lib.Maybe GHC.Types.Int) ->
+                   case a1 of wild {
+                     Lib.Some a2
+                     -> case b of wild1 {
+                          Lib.Some b1
+                          -> case GHC.Classes.eqInt a2 b1 of wild2 {
+                               GHC.Types.False -> GHC.Types.True
+                               GHC.Types.True -> GHC.Types.False }
+                          Lib.None -> GHC.Types.True }
+                     Lib.None
+                     -> case b of wild1 {
+                          Lib.Some ipv -> GHC.Types.True Lib.None -> GHC.Types.False } }) -}
+72dd4bb1ee3784e7e012f93ca5cf0a75
+  $s$fShowMaybe :: GHC.Show.Show (Lib.Maybe GHC.Types.Int)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Lib.Maybe GHC.Types.Int)
+                  (Lib.$fShowMaybe_$cshowsPrec @ GHC.Types.Int GHC.Show.$fShowInt)
+                  (\ (x :: Lib.Maybe GHC.Types.Int) ->
+                   case x of wild {
+                     Lib.Some b1
+                     -> GHC.Base.augment
+                          @ GHC.Types.Char
+                          (\ @ b
+                             (c :: GHC.Types.Char -> b -> b)[OneShot]
+                             (n :: b)[OneShot] ->
+                           GHC.Base.foldr @ GHC.Types.Char @ b c n Lib.$fShowMaybe5)
+                          (GHC.Show.showSignedInt
+                             Lib.$fShowMaybe7
+                             b1
+                             (GHC.Types.[] @ GHC.Types.Char))
+                     Lib.None -> Lib.$fShowMaybe3 })
+                  (\ (eta :: [Lib.Maybe GHC.Types.Int]) (eta38 :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ (Lib.Maybe GHC.Types.Int)
+                     (Lib.$fShowMaybe_$cshowsPrec
+                        @ GHC.Types.Int
+                        GHC.Show.$fShowInt
+                        Lib.$fShowMaybe1)
+                     eta
+                     eta38) -}
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+0bf4013d41234bf5160bd47dcf07ad86
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+8e9a41602fb0cd36c5e91993d146fdf2
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Test.Hspec.Core.Runner.hspec2
+                        Test.Hspec.Core.Config.Options.defaultConfig
+                        Main.main2
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Types.N:IO[0]
+                                       <((), [Test.Hspec.Core.Tree.SpecTree ()])>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                                            <[Test.Hspec.Core.Tree.SpecTree ()]>_N
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
+                        s of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Test.Hspec.Core.Runner.Summary ds3 ds4 ->
+                 case ds4 of wild1 { GHC.Types.I# x ->
+                 case x of wild2 {
+                   DEFAULT -> System.Exit.exitFailure1 @ () ipv
+                   0# -> (# ipv, GHC.Tuple.() #) } } } }) -}
+cbcba579fc21a5a4c9614c2c4cd23fba
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), [Test.Hspec.Core.Tree.SpecTree ()]) #)
+  {- Arity: 1, Strictness: <S,U> -}
+a0555f2a472db7a058505c72d1d23a09
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+"SPEC/Main $fEqMaybe @ Int" [orphan] forall (v :: GHC.Classes.Eq
+                                                    GHC.Types.Int)
+  Lib.$fEqMaybe @ GHC.Types.Int v = Main.$s$fEqMaybe
+"SPEC/Main $fShowMaybe @ Int" [orphan] forall (v :: GHC.Show.Show
+                                                      GHC.Types.Int)
+  Lib.$fShowMaybe @ GHC.Types.Int v = Main.$s$fShowMaybe
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
